@@ -1,0 +1,366 @@
+:root {
+  --main-text-color: #212121;
+  --blue-color: #2196f3;
+  --grey-color: #757575;
+  --accent-bcg-color: #2f303a;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.logo-font {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+.logo-header-color {
+  color: var(--main-text-color);
+}
+
+.logo-footer-color {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------  HEADER  ----------------*/
+.page-header {
+  /* height: 80px; */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px dashed purple; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+.navigation li:not(:first-child) {
+  margin-left: 50px;
+  /* outline: 1px dashed green; */
+}
+
+.navigation li:first-child {
+  margin-left: 93px;
+  /* outline: 1px dashed green; */
+}
+
+.font-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.font-nav:hover,
+.font-nav:focus {
+  color: var(--blue-color);
+}
+
+.font-nav.current {
+  color: var(--blue-color);
+}
+
+.font-contacts {
+  display: block;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+}
+
+.font-contacts:hover,
+.font-contacts:focus {
+  color: var(--blue-color);
+}
+
+.contacts {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  /* outline: 1px dashed green; */
+}
+
+.contacts li:not(:first-child) {
+  padding-left: 50px;
+  /* outline: 1px dashed green; */
+}
+
+/* ----------------  HERO  -----------------*/
+
+.section {
+  padding-top: 94px;
+  /* outline: 1px dashed blue; */
+}
+
+.hero {
+  height: 600px;
+  background: var(--accent-bcg-color);
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.font-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.button {
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-order {
+  width: 200px;
+  margin-top: 30px;
+  background: var(--blue-color);
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------  ПРЕИМУЩЕСТВА  -------------*/
+
+.benefits {
+  display: flex;
+  margin-left: -30px;
+}
+
+.benefits li {
+  display: inline;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  /* outline: 1px dashed green; */
+}
+
+.font-fact-name {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.font-fact-descr {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+
+.detail {
+  width: 275px;
+  height: 100px;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* ----------  ЧЕМ МЫ ЗАНИМАЕМСЯ  -----------*/
+.what-we-do {
+  padding-bottom: 94px;
+}
+.whatwedo-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  /* outline: 1px dashed red; */
+}
+
+/* -------------  НАША КОМАНДА  -------------*/
+.command {
+  background: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.command ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  /* outline: 1px dashed red; */
+}
+
+.person {
+  background: #ffffff;
+  display: inline;
+  flex-basis: calc (100% / 4 - 30px);
+  margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person:first-child {
+  margin-left: 0;
+}
+
+.person-text {
+  padding: 30px 0;
+}
+
+.font-name {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+}
+
+.font-job {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+
+/* --------------  FOOTER  --------------- */
+.footer {
+  padding: 60px 0;
+  background: var(--accent-bcg-color);
+}
+
+.address {
+  width: 230px;
+  padding-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+  /* outline: 1px dashed green; */
+}
+
+.footer-contacts {
+  display: block;
+  padding-top: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  /* outline: 1px dashed green; */
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--blue-color);
+}
+
+.address ul {
+  list-style: none;
+}
+
+/* -------------- PORTFOLI0  -------------- */
+.portfolio {
+  padding-bottom: 94px;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.button-filter {
+  margin-right: 8px;
+  padding: 0 22px;
+  background: #ffffff;
+  color: var(--main-text-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background: var(--blue-color);
+  color: #ffffff;
+}
+
+.portfolio-products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  /* outline: 1px dashed orangered; */
+}
+
+.product {
+  display: inline;
+  border: 1px solid #eeeeee;
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  /* outline: 1px dashed green; */
+}
+
+/* .product-thumb {
+  outline: 1px dashed red;
+} */
+
+.product a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.product img {
+  display: block;
+  max-width: 100%;
+}
+
+.product-text {
+  padding: 20px 24px;
+}
