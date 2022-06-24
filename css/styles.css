@@ -56,7 +56,7 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px dashed purple; */
+  outline: 1px dashed red;
 }
 
 .header {
@@ -101,8 +101,9 @@ ul {
 }
 
 .font-contacts {
-  display: block;
+  display: flex;
   text-decoration: none;
+
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -124,9 +125,25 @@ ul {
   /* outline: 1px dashed green; */
 }
 
+.contacts li {
+  display: flex;
+  align-items: center;
+}
+
 .contacts li:not(:first-child) {
-  padding-left: 50px;
-  /* outline: 1px dashed green; */
+  margin-left: 30px;
+  /* outline: 1px dotted green; */
+}
+
+.font-contacts .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.font-contacts .icon:hover {
+  fill: currentColor;
 }
 
 /* ----------------  HERO  -----------------*/
@@ -137,12 +154,25 @@ ul {
 }
 
 .hero {
-  height: 600px;
-  background: var(--accent-bcg-color);
-  /* text-align: center; */
-  display: flex;
+  padding-top: 200px;
+  text-align: center;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--accent-bcg-color);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bcg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .font-hero {
@@ -156,7 +186,6 @@ ul {
 
 .button {
   height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
@@ -172,20 +201,37 @@ ul {
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ------------  ПРЕИМУЩЕСТВА  -------------*/
 
 .benefits {
   display: flex;
+  list-style: none;
   margin-left: -30px;
 }
 
 .benefits li {
-  display: inline;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   /* outline: 1px dashed green; */
+}
+
+.benefits .icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits .icon {
+  width: 70px;
+  height: 70px;
 }
 
 .font-fact-name {
@@ -270,20 +316,62 @@ ul {
   margin-top: 10px;
 }
 
+/* -------- Постоянные клиенты ------------ */
+.clients-list {
+  list-style: none;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  outline: 1px dashed green;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  /* background-color: teal; */
+}
+
+.client:hover,
+.client:focus {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.client .icon {
+  fill: currentColor;
+  /* width: 70px;
+  height: 70px; */
+}
+
 /* --------------  FOOTER  --------------- */
 .footer {
   padding: 60px 0;
   background: var(--accent-bcg-color);
 }
 
-.address {
+.footer > .container {
+  display: flex;
+}
+
+.footer1 {
   width: 230px;
+
+  outline: 1px dashed red;
+}
+
+.address {
   padding-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
-  /* outline: 1px dashed green; */
+  outline: 1px dashed green;
 }
 
 .footer-contacts {
@@ -306,6 +394,44 @@ ul {
   list-style: none;
 }
 
+.footer-joinus {
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 12px;
+  outline: 1px dashed red;
+}
+
+.joinus {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.joinus-social {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--blue-color);
+}
+
 /* -------------- PORTFOLI0  -------------- */
 .portfolio {
   padding-bottom: 94px;
@@ -320,7 +446,7 @@ ul {
 .button-filter {
   margin-right: 8px;
   padding: 0 22px;
-  background: #ffffff;
+  background: #f5f4fa;
   color: var(--main-text-color);
 }
 
@@ -328,6 +454,8 @@ ul {
 .button-filter:focus {
   background: var(--blue-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-products {
@@ -335,16 +463,22 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
+  list-style: none;
   /* outline: 1px dashed orangered; */
 }
 
 .product {
-  display: inline;
   border: 1px solid #eeeeee;
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
   /* outline: 1px dashed green; */
+}
+
+.product:hover,
+.product:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* .product-thumb {
@@ -356,7 +490,8 @@ ul {
   color: var(--main-text-color);
 }
 
-.product img {
+.product img,
+.customers img {
   display: block;
   max-width: 100%;
 }
