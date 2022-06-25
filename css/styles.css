@@ -55,7 +55,6 @@ ul {
 
 /* ---------------  HEADER  ----------------*/
 .page-header {
-  /* height: 80px; */
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -158,17 +157,9 @@ ul {
 
 /* ----------------  HERO  -----------------*/
 
-.section {
-  padding-top: 94px;
-  /* outline: 1px dashed blue; */
-}
-
 .hero {
   padding-top: 200px;
   text-align: center;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 
   max-width: 1600px;
   height: 600px;
@@ -215,6 +206,10 @@ ul {
 }
 
 /* ------------  ПРЕИМУЩЕСТВА  -------------*/
+.section {
+  padding-top: 94px;
+  /* outline: 1px dashed blue; */
+}
 
 .benefits {
   display: flex;
@@ -259,9 +254,10 @@ ul {
   margin-top: 10px;
 }
 
-.detail {
-  width: 275px;
-  height: 100px;
+/* ----------  ЧЕМ МЫ ЗАНИМАЕМСЯ  -----------*/
+
+.what-we-do {
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -269,15 +265,11 @@ ul {
   text-align: center;
 }
 
-/* ----------  ЧЕМ МЫ ЗАНИМАЕМСЯ  -----------*/
-.what-we-do {
-  padding-bottom: 94px;
-}
 .whatwedo-images {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  /* outline: 1px dashed red; */
+  /* outline: 1px dashed green; */
 }
 
 /* -------------  НАША КОМАНДА  -------------*/
@@ -291,7 +283,7 @@ ul {
   justify-content: center;
   list-style: none;
   margin-top: 50px;
-  /* outline: 1px dashed purple; */
+  /* outline: 1px dashed green; */
 }
 
 .person {
@@ -307,7 +299,7 @@ ul {
   margin-left: 0;
 }
 
-.person-text {
+.person-descr {
   padding: 30px 0;
 }
 
@@ -344,10 +336,10 @@ ul {
 
 /* -------- Постоянные клиенты ------------ */
 .clients-list {
-  list-style: none;
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  list-style: none;
+  margin-top: 50px;
   /* outline: 1px dashed green; */
 }
 
@@ -380,7 +372,6 @@ ul {
 
 .footer-add {
   width: 230px;
-
   /* outline: 1px dashed red; */
 }
 
@@ -472,7 +463,6 @@ ul {
   margin-right: 8px;
   padding: 0 22px;
   background: #f5f4fa;
-  color: var(--main-text-color);
 }
 
 .button-filter:hover,
@@ -517,11 +507,12 @@ ul {
 }
 
 .product img,
-.customers img {
+.customers img,
+.person img {
   display: block;
   max-width: 100%;
 }
 
-.product-text {
+.product-descr {
   padding: 20px 24px;
 }
